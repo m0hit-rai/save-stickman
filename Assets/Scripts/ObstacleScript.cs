@@ -24,8 +24,16 @@ public class ObstacleScript : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.tag == "StickMan")
+        {
+            Destroy(collision.gameObject);
+            GameManager.instance.GameOver();
+        }
+
         if(collision.gameObject.tag == "Ground")
         {
+            GameManager.instance.incrementScore();
+
             Destroy(this.gameObject);
         }
     }
