@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     bool gameOver = false;
     int score = 0;
     public Text scoreText;
+    public GameObject gameOverPanel;
     private void Awake()
     {
         instance = this;
@@ -32,5 +34,16 @@ public class GameManager : MonoBehaviour
     {
         gameOver = true;
         GameObject.Find("ObstacleSpawnner").GetComponent<ObstacleSpawnnerController>().StopSpawning();
+        gameOverPanel.SetActive(true);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Game");
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
