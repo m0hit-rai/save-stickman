@@ -11,8 +11,6 @@ ScriptsOnlyBuild:
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
     - UnityEditor.U2D.IK.IKGizmos
-    Unity.2D.IK.Runtime.dll:
-    - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -34,6 +32,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   sceneClasses:
@@ -67,27 +66,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1486}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 2072}
+      Script: {instanceID: 2254}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2430}
     - Class: 114
-      Script: {instanceID: 2588}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 3030}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 2972}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3074}
+      Script: {instanceID: 3344}
     - Class: 114
-      Script: {instanceID: 3782}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 4548}
+      Script: {instanceID: 4324}
+    - Class: 114
+      Script: {instanceID: 5276}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -134,25 +135,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1486}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 1684}
+      Script: {instanceID: 1534}
     - Class: 114
-      Script: {instanceID: 2072}
+      Script: {instanceID: 1758}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2254}
     - Class: 114
-      Script: {instanceID: 2588}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2760}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 2972}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3074}
+      Script: {instanceID: 3344}
     - Class: 114
-      Script: {instanceID: 3782}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 21578}
+      Script: {instanceID: 4324}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -186,6 +187,12 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuController
+  - hash:
+      serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -202,12 +209,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
-  - hash:
-      serializedVersion: 2
-      Hash: d1b036fbe5adcfe372c77a9d812c7e37
-    assemblyName: Unity.2D.IK.Runtime.dll
-    namespaceName: UnityEditor.U2D.IK
-    className: IKEditorManagerHelper
   - hash:
       serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
@@ -276,7 +277,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: f1d735cc1a21c3704ab52568f4fbfcf8
+      Hash: 91d258529db2b5060a913f2afcea1a21
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -298,12 +299,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: IKManager2D
-  - hash:
-      serializedVersion: 2
-      Hash: 5f170942ee57c7a568f5bcfc7521adea
-    assemblyName: UnityEngine.TestRunner.dll
-    namespaceName: UnityEngine.TestTools
-    className: EnumerableTestState
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -672,7 +667,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 610c5e6136ba74a65950bd76b8e4b7a0
+      Hash: 0753522acfc41f66623a28f0c8086572
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -682,6 +677,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.2D.Animation.Runtime.dll
+    namespaceName: UnityEngine.U2D.Animation
+    className: BufferManager
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -712,14 +713,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MenuController
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: D:/Unity Projects/Dodging Dog Game/Builds/STSv1.0.apk
+  playerPath: D:/Unity Projects/Dodging Dog Game/Builds/STSv1.2.apk

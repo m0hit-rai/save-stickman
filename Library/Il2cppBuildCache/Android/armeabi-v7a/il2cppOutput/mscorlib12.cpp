@@ -9001,6 +9001,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeInitializationException__ctor_mC0969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GregorianCalendarHelper__ctor_mA20BA428607ABCC2B7E0B7589A2727A6D39B4417 (GregorianCalendarHelper_t2EC3E1E00C613F5C894292A04D5C04ABDA13EB85 * __this, Calendar_t3D638AEAB45F029DF47138EDA4CF9A7CBBB1C32A * ___cal0, EraInfoU5BU5D_t10A6B77B46980FAB77489DFE9A287CFA907F099A* ___eraInfo1, const RuntimeMethod* method);
 // System.Int32 System.Globalization.GregorianCalendarHelper::GetDaysInMonth(System.Int32,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GregorianCalendarHelper_GetDaysInMonth_m3C3346A69DD4B0340A8843365A8A79019D1FC02C (GregorianCalendarHelper_t2EC3E1E00C613F5C894292A04D5C04ABDA13EB85 * __this, int32_t ___year0, int32_t ___month1, int32_t ___era2, const RuntimeMethod* method);
+// System.Int32 System.Globalization.GregorianCalendarHelper::GetDaysInYear(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GregorianCalendarHelper_GetDaysInYear_m420F069CAEECF1B00DCF044B739F18C8DCB66AAD (GregorianCalendarHelper_t2EC3E1E00C613F5C894292A04D5C04ABDA13EB85 * __this, int32_t ___year0, int32_t ___era1, const RuntimeMethod* method);
 // System.Int32 System.Globalization.GregorianCalendarHelper::GetDayOfMonth(System.DateTime)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GregorianCalendarHelper_GetDayOfMonth_mB84A8BCAC7BFBFCE7FCC495384F0130FCAA564E4 (GregorianCalendarHelper_t2EC3E1E00C613F5C894292A04D5C04ABDA13EB85 * __this, DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405  ___time0, const RuntimeMethod* method);
 // System.DayOfWeek System.Globalization.GregorianCalendarHelper::GetDayOfWeek(System.DateTime)
@@ -29403,6 +29405,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TaiwanCalendar_GetDaysInMonth_m474AB5
 		int32_t L_4;
 		L_4 = GregorianCalendarHelper_GetDaysInMonth_m3C3346A69DD4B0340A8843365A8A79019D1FC02C(L_0, L_1, L_2, L_3, /*hidden argument*/NULL);
 		return L_4;
+	}
+}
+// System.Int32 System.Globalization.TaiwanCalendar::GetDaysInYear(System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TaiwanCalendar_GetDaysInYear_m300D669C66410B683FCBCC59DEDCB9218284379B (TaiwanCalendar_tF03DACFCF8C6BC8EDD68CADE289D6A32FBBC516C * __this, int32_t ___year0, int32_t ___era1, const RuntimeMethod* method)
+{
+	{
+		GregorianCalendarHelper_t2EC3E1E00C613F5C894292A04D5C04ABDA13EB85 * L_0 = __this->get_helper_5();
+		int32_t L_1 = ___year0;
+		int32_t L_2 = ___era1;
+		NullCheck(L_0);
+		int32_t L_3;
+		L_3 = GregorianCalendarHelper_GetDaysInYear_m420F069CAEECF1B00DCF044B739F18C8DCB66AAD(L_0, L_1, L_2, /*hidden argument*/NULL);
+		return L_3;
 	}
 }
 // System.Int32 System.Globalization.TaiwanCalendar::GetDayOfMonth(System.DateTime)

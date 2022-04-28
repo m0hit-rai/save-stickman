@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     bool gameOver = false;
     int score = 0;
+    public int level = 1;
     public Text scoreText;
+    public Text levelText;
     public GameObject gameOverPanel;
     private void Awake()
     {
@@ -26,10 +28,16 @@ public class GameManager : MonoBehaviour
                 scoreString = "0" + scoreString;
             }
             scoreText.text = scoreString;
-            print(score);
+            /*print(score);*/
+            if((level-1)<(score/100))
+            {
+                level += 1;
+                levelText.text = "Level - " + level.ToString();
+                StickmanController.Instance.increseMoveSpeed();
+            }
         }
     }
-
+    public static GameManager Instance { get { return instance; } }
     public void GameOver()
     {
         gameOver = true;
